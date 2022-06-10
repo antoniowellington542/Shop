@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 
 
 interface ContainerProps{
-    color?: 'default' | 'sky_blue' | 'pantone_purple'; 
+    color?: 'default' | 'sky_blue' | 'purple'; 
 }
 
 export default createGlobalStyle`
@@ -16,21 +16,22 @@ export default createGlobalStyle`
     body{
         background-color: #FFFFFF;
         font-family: sans-serif;
-        color: #FFFFFF;
+        color: black;
     }
 
 `;
 
 export const Container = styled.div`
-    max-width: 1320px;
-    width: 1320px;
+    max-width: 70%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
 `
 
 export const ContainerFluid = styled.div<ContainerProps>`
-    max-width: 100%;
     width: 100%;
-    background-color: ${props => props.color == 'default' 
-                        ? '#FFFFFF' : props.color === 'sky_blue' 
-                        ? props.theme.colors.sky_blue : props.theme.colors.pantone_purple};
+    background-color: ${props => props.color === 'purple' 
+                        ? props.theme.colors.purple : props.color === 'sky_blue' 
+                        ? props.theme.colors.sky_blue : '#FFFFFF'};
 `
 

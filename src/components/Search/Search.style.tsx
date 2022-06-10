@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import searchIcon from '../../../public/icons/search_icon.svg';
+import searchIcon from '../../img/icons/search_icon.svg';
 
 declare module "*.svg";
 declare module "*.png";

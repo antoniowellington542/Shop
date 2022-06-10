@@ -7,4 +7,4 @@ export default {
     component: Search
 } as ComponentMeta<typeof Search>;
 
-export const Primary: ComponentStory<typeof Search> = (args) => <Search />;
+export const Primary: ComponentStory<typeof Search> = () => <Search />;
