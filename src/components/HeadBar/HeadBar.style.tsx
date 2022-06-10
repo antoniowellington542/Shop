@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const HeadArea = styled.div`
@@ -49,6 +50,12 @@ export const HeadNavItem = styled.li`
     display: flex;
     justify-content: center;
     align-items: start;
-    gap: 2px;
+    gap: 5px;
 
+`
+
+export const HeadNavLink = styled(Link)`
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
 `

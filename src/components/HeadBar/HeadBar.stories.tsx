@@ -1,14 +1,20 @@
 import {ComponentStory, ComponentMeta} from '@storybook/react';
+import { MemoryRouter } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { light } from '../../styles/themes/light';
 import HeadBar from './HeadBar';
+
 export default{
     title: 'Components/HeadBar',
     component: HeadBar,
 } as ComponentMeta<typeof HeadBar>;
 
 
-export const Template: ComponentStory<typeof HeadBar> = (args) => 
-    <ThemeProvider theme={light}>
+const Template = (args: unknown): JSX.Element => 
+<ThemeProvider theme={light}>
+    <MemoryRouter>
         <HeadBar />
-    </ThemeProvider>
+    </MemoryRouter>
+</ThemeProvider>;
+
+export const Heading: ComponentStory<typeof HeadBar> = Template

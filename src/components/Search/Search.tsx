@@ -1,7 +1,6 @@
-import { FC } from "react";
 import { SearchContainer, SearchInput, SearchLabel } from "./Search.style";
 
-export const Search: FC = () => {
+export const Search = () => {
     return(
         <SearchContainer>
             <SearchInput
@@ -13,5 +12,4 @@ export const Search: FC = () => {
             />
         </SearchContainer>
     )
-}
-
+};

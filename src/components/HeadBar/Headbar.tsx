@@ -1,6 +1,7 @@
 import { Container, ContainerFluid } from "../../styles/global";
 import { HeadArea, ContactArea, HeadNav, ContactItem, HeadNavList, HeadNavItem, SelectLink } from "./HeadBar.style";
 import { Link } from "react-router-dom";
+
 //Imagens
 import emailIcon from '../../Imgs/icons/email_icon.svg';
 import phoneIcon from '../../Imgs/icons/phone_call_icon.svg';
@@ -51,11 +52,10 @@ const HeadBar = () =>{
                                 <Link 
                                     to="/account" 
                                     style={{ 
-                                            color: '#FFFFFF',
-                                            textDecoration: 'none',
+                                       
                                     }}>
                                     <span>Login</span>
-                                    <img src={userIcon} alt="user_icon" />
+                                    <img  src={userIcon} alt="user_icon" />
                                 </Link>
                             </HeadNavItem>
                             <HeadNavItem>
@@ -64,6 +64,7 @@ const HeadBar = () =>{
                                     style={{ 
                                         color: '#FFFFFF',
                                         textDecoration: 'none',
+                                        display: 'flex',
                                     }}
                                     >
                                     <span>Wishlist</span>
@@ -76,6 +77,7 @@ const HeadBar = () =>{
                                     style={{ 
                                         color: '#FFFFFF',
                                         textDecoration: 'none',
+                                        display: 'flex',
                                     }}
                                     >
                                     <img src={cartIcon} alt="cart_icon"/>   
