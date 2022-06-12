@@ -1,4 +1,4 @@
-import { DefaultTheme } from "styled-components";
+import { DefaultTheme} from "styled-components";
 const light: DefaultTheme = {
     
     colors: {
@@ -12,6 +12,7 @@ const light: DefaultTheme = {
         navy_blue: '#151875',
         off_navy_blue: '#3F509E',
         off_purple: '#9F63B5',
+        text_color: '#0D0E43'
     },
 
     font: {
@@ -19,5 +20,6 @@ const light: DefaultTheme = {
         secondary: 'Lato',
     }
 };
+
 
 export {light};

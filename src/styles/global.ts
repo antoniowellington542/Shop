@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { createGlobalStyle } from "styled-components";
 
-
 interface ContainerProps{
     color?: 'default' | 'sky_blue' | 'purple'; 
 }
@@ -22,10 +21,18 @@ export default createGlobalStyle`
 `;
 
 export const Container = styled.div`
-    max-width: 70%;
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media(max-width: 950px){
+        width: 90%;
+    }
+
 `
 
 export const ContainerFluid = styled.div<ContainerProps>`

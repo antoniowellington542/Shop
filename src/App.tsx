@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes,Route} from "react-router-dom";
+import NavBar from "./components/NavBar/NavBar";
 
 //Components
 const Loading = React.lazy(()=>import('./components/Loading/Loading'));
@@ -20,6 +21,7 @@ const App = ()=> {
   return (
     <React.Suspense fallback={<Loading/>}>
       <HeadBar/>
+      <NavBar/>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/shop" element={<Shop/>} />

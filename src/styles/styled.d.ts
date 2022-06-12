@@ -13,6 +13,7 @@ declare module 'styled-components'{
             navy_blue: string;
             off_navy_blue: string;
             off_purple: string;
+            text_color: string;
         },
         font: {
             primary: string;

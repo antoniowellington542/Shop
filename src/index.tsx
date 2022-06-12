@@ -15,7 +15,7 @@ root.render(
     <BrowserRouter>
       <ThemeProvider theme={light}>
         <GlobalStyles />
-        <App/>
+        <App />
       </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
